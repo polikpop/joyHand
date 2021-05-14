@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
-    "project_path":       "C:/Users/Se7en/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "C:/Users/Se7en/Desktop/joyHand/build/bootloader",
-    "config_file":        "C:/Users/Se7en/Desktop/joyHand/sdkconfig",
+    "project_path":       "/Users/shuoxu/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/Users/shuoxu/Desktop/joyHand-master/build/bootloader",
+    "config_file":        "/Users/shuoxu/Desktop/joyHand-master/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
@@ -12,9 +12,9 @@
     "monitor_baud" :      "115200",
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "C:/Users/Se7en/esp/esp-idf/components/efuse/Kconfig;C:/Users/Se7en/esp/esp-idf/components/esp32/Kconfig;C:/Users/Se7en/esp/esp-idf/components/esp_common/Kconfig;C:/Users/Se7en/esp/esp-idf/components/log/Kconfig;C:/Users/Se7en/esp/esp-idf/components/spi_flash/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/Users/Se7en/esp/esp-idf/components/bootloader/Kconfig.projbuild;C:/Users/Se7en/esp/esp-idf/components/esptool_py/Kconfig.projbuild;C:/Users/Se7en/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "/Users/shuoxu/esp/esp-idf/components/efuse/Kconfig;/Users/shuoxu/esp/esp-idf/components/esp32/Kconfig;/Users/shuoxu/esp/esp-idf/components/esp_common/Kconfig;/Users/shuoxu/esp/esp-idf/components/log/Kconfig;/Users/shuoxu/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/shuoxu/esp/esp-idf/components/bootloader/Kconfig.projbuild;/Users/shuoxu/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/shuoxu/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "C:/Users/Se7en/esp/esp-idf/components/bootloader", "C:/Users/Se7en/esp/esp-idf/components/bootloader_support", "C:/Users/Se7en/esp/esp-idf/components/efuse", "C:/Users/Se7en/esp/esp-idf/components/esp32", "C:/Users/Se7en/esp/esp-idf/components/esp_common", "C:/Users/Se7en/esp/esp-idf/components/esp_rom", "C:/Users/Se7en/esp/esp-idf/components/esptool_py", "C:/Users/Se7en/esp/esp-idf/components/log", "C:/Users/Se7en/esp/esp-idf/components/bootloader/subproject/main", "C:/Users/Se7en/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "C:/Users/Se7en/esp/esp-idf/components/partition_table", "C:/Users/Se7en/esp/esp-idf/components/soc", "C:/Users/Se7en/esp/esp-idf/components/spi_flash", "C:/Users/Se7en/esp/esp-idf/components/xtensa", "" ]
+    "build_component_paths" : [ "/Users/shuoxu/esp/esp-idf/components/bootloader", "/Users/shuoxu/esp/esp-idf/components/bootloader_support", "/Users/shuoxu/esp/esp-idf/components/efuse", "/Users/shuoxu/esp/esp-idf/components/esp32", "/Users/shuoxu/esp/esp-idf/components/esp_common", "/Users/shuoxu/esp/esp-idf/components/esp_rom", "/Users/shuoxu/esp/esp-idf/components/esptool_py", "/Users/shuoxu/esp/esp-idf/components/log", "/Users/shuoxu/esp/esp-idf/components/bootloader/subproject/main", "/Users/shuoxu/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/Users/shuoxu/esp/esp-idf/components/partition_table", "/Users/shuoxu/esp/esp-idf/components/soc", "/Users/shuoxu/esp/esp-idf/components/spi_flash", "/Users/shuoxu/esp/esp-idf/components/xtensa", "" ]
 }

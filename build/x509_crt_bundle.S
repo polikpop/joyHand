@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/Se7en/Desktop/joyHand/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/shuoxu/Desktop/joyHand-master/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

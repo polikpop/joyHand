@@ -12,7 +12,13 @@
 		"rmt_struct.h": "c",
 		"esp_system.h": "c",
 		"*.ipp": "cpp",
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"esp_adc_cal.h": "c",
+		"keyboard.h": "c",
+		"connect.h": "c",
+		"stddef.h": "c",
+		"gpio.h": "c",
+		"esp_log.h": "c"
 	},
 	"cmake.configureOnOpen": true,
 	"idf.portWin": "COM5",

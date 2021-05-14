@@ -60,7 +60,7 @@ extern "C" {
 
 
 #define TCP_SERVER_CLIENT_OPTION false  //true为开启热点并且创建tcp服务器，fasle为连接到指定的路由器并且连接到指定的tcp服务器
-#define TAG "XuHongTCP-->" //打印的tag
+#define TAG "LimitTCP-->" //打印的tag
 
 //以下是softAP热点模式的配置信息
 #define SOFT_AP_SSID "rc2020"
