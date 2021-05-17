@@ -54,13 +54,14 @@
 #define READ_KEY_COL3()  gpio_get_level(KEY_COL3)
 #define READ_KEY_COL4()  gpio_get_level(KEY_COL4)
 
+
+//下面是函数和变量的声明
 extern void KEY_Init();
 extern void get_gpio_state();
 extern void key_value_to_table();
 
 
 extern uint8_t key_value[18];
-//extern uint8_t key_table[8];
 extern int16_t key_table[9];
 extern int16_t key_old_table[9];
 

@@ -25,7 +25,7 @@
 #define WS2812_PIN2 17	
 /*****************************************************************/
 
-#define delay_ms(ms) vTaskDelay((ms) / portTICK_RATE_MS)					   // 延时函数的宏
+#define delay_ms(ms) vTaskDelay((ms) / portTICK_RATE_MS)					   // 	系统延时函数的宏，可用可不用。
 
 
 /*****************************ADC相关定义********************************************/
@@ -405,15 +405,6 @@ void app_main()
 		//xTaskCreatePinnedToCore(rainbow, "ws2812 rainbow demo", 4096, NULL, 10, NULL, 1);
 	#endif
 		xTaskCreatePinnedToCore(&tcp_conn, "tcp_conn", 4096, NULL, 10, NULL, 0);
-	// oled_init();
-	// adc_Init();
-	// KEY_Init();
-	//BEEP_Init();
-	//ws2812B_init(WS2812_PIN1);
-	//ws2812B_init(WS2812_PIN2);
-	// xTaskCreatePinnedToCore(key_scanner, "scan", 4096, NULL, 10, NULL, 1);
-	//xTaskCreatePinnedToCore(rainbow, "ws2812 rainbow demo", 4096, NULL, 10, NULL, 1);
-	// xTaskCreatePinnedToCore(oled_show, "oled", 4096, NULL, 10, NULL, 1);
 
 	return;
 }

@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++")
+set(CMAKE_CXX_COMPILER "/opt/homebrew/bin/g++-10")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "8.4.0")
+set(CMAKE_CXX_COMPILER_VERSION "10.2.1")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")
@@ -13,19 +13,20 @@ set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")
 set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")
 set(CMAKE_CXX23_COMPILE_FEATURES "")
 
-set(CMAKE_CXX_PLATFORM_ID "")
+set(CMAKE_CXX_PLATFORM_ID "Darwin")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
+set(CMAKE_CXX_COMPILER_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr")
+set(CMAKE_COMPILER_SYSROOT "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr")
 
 
-
-set(CMAKE_AR "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ar")
-set(CMAKE_CXX_COMPILER_AR "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc-ar")
-set(CMAKE_RANLIB "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc-ranlib")
-set(CMAKE_LINKER "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ld")
+set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/homebrew/bin/gcc-ar-10")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/homebrew/bin/gcc-ranlib-10")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -59,8 +60,8 @@ set(CMAKE_CXX_LINKER_PREFERENCE 30)
 set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
 
 # Save compiler ABI information.
-set(CMAKE_CXX_SIZEOF_DATA_PTR "4")
-set(CMAKE_CXX_COMPILER_ABI "ELF")
+set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
+set(CMAKE_CXX_COMPILER_ABI "")
 set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")
 
@@ -82,10 +83,10 @@ if(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX)
 endif()
 
 
+set(CMAKE_CXX_SYSROOT_FLAG "-isysroot")
+set(CMAKE_CXX_OSX_DEPLOYMENT_TARGET_FLAG "-mmacosx-version-min=")
 
-
-
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/include/c++/8.4.0;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/include/c++/8.4.0/xtensa-esp32-elf;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/include/c++/8.4.0/backward;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0/include-fixed;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc;c;nosys;c;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/8.4.0;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/lib/gcc;/Users/shuoxu/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/xtensa-esp32-elf/lib")
-set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/gcc/10.2.0_4/include/c++/10.2.1;/opt/homebrew/Cellar/gcc/10.2.0_4/include/c++/10.2.1/aarch64-apple-darwin20;/opt/homebrew/Cellar/gcc/10.2.0_4/include/c++/10.2.1/backward;/opt/homebrew/Cellar/gcc/10.2.0_4/lib/gcc/10/gcc/aarch64-apple-darwin20/10.2.1/include;/opt/homebrew/Cellar/gcc/10.2.0_4/lib/gcc/10/gcc/aarch64-apple-darwin20/10.2.1/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;emutls_w;gcc;gcc")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/Cellar/gcc/10.2.0_4/lib/gcc/10/gcc/aarch64-apple-darwin20/10.2.1;/opt/homebrew/Cellar/gcc/10.2.0_4/lib/gcc/10;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks")

@@ -62,7 +62,7 @@ extern "C" {
 #define TCP_SERVER_CLIENT_OPTION false  //true为开启热点并且创建tcp服务器，fasle为连接到指定的路由器并且连接到指定的tcp服务器
 #define TAG "LimitTCP-->" //打印的tag
 
-//以下是softAP热点模式的配置信息
+//以下是softAP热点模式的配置信息，即要当服务端的esp32所需要使用的配置信息
 #define SOFT_AP_SSID "rc2020"
 
 #define SOFT_AP_PAS "123456789" //如果密码设置为空，则配置的热点是开放的，没有密码的。
@@ -70,8 +70,8 @@ extern "C" {
 #define SOFT_AP_MAX_CONNECT 4 //作为AP热点时候，最大的连接数目
 
 
-//以下是station模式配置信息,是您家里的路由器的信息
-
+//以下是station模式配置信息,即需要当客户端的esp32所需要使用的配置信息。注意这里要和上面相符
+//192.168.4.1是esp32出厂时写死的地址。直接写不用改。
 #define GATEWAY_SSID "rc2020"
 
 #define GATEWAY_PAS "123456789"
@@ -79,11 +79,11 @@ extern "C" {
 #define TCP_SERVER_ADRESS "192.168.4.1" //要连接TCP服务器地址
 
 
-//统一的端口号，包括TCP客户端或者服务端
+//统一的端口号，包括TCP客户端或者服务端，默认就好
 #define TCP_PORT 8266
 
 
-
+//下面是freertos的相关配置，看不懂默认就好。
 /* FreeRTOS event group to signal when we are connected to wifi*/
 extern EventGroupHandle_t tcp_event_group;
 #define WIFI_CONNECTED_BIT BIT0
@@ -142,6 +142,7 @@ int check_working_socket();
 /*
 Pins in use. The SPI Master can use the GPIO mux, so feel free to change these if needed.
 */
+//这里是spi的设置宏
 #if CONFIG_IDF_TARGET_ESP32 || CONFIG_IDF_TARGET_ESP32S2
 #define GPIO_HANDSHAKE 2
 #define GPIO_MOSI 13
